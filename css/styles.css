@@ -2,6 +2,7 @@
     --primary-color: #2E2F42;
     --logo-color: #4D5AE5;
     --additional-color: #434455;
+    --all-transition: 
 }
 
 p, h1, h2, h3, h4, h5, h6{
@@ -104,10 +105,21 @@ img{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu:is(:hover, :focus){
     color: #404BBF;
+}
+
+.header-menu:hover::after{
+    content: "";
+    display: block;
+    background: #404BBF;
+    border-radius: 2px;
+    border-style: solid;
+    margin-top: 24px;
 }
 
 .address{
@@ -125,6 +137,8 @@ img{
     letter-spacing: 0.02em;
     color: var(--additional-color);
     text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:is(:hover, :focus){
     color:#404BBF;
@@ -164,6 +178,8 @@ img{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-text:is(:hover, :focus){
     background: #404BBF;
