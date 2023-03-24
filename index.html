@@ -57,11 +57,9 @@
           <h1 class="section-one-text">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn-text" type="button" data-modal-open>
+          <button class="btn-text" data-modal-open type="button">
             Order Service
           </button>
-
-          <button type="button" data-modal-close></button>
         </div>
       </section>
       <section class="section-two">
@@ -372,6 +370,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="8" height="8" class="close-svg">
+            <use href="./images/icons.svg#icon-X"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
