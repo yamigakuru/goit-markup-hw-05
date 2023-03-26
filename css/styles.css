@@ -116,9 +116,10 @@ img{
 
 .current{
     position: relative;
+    color: #404BBF;
 }
 
-.current::after{
+.header-menu.current::after{
     content: "";
     display: block;
     background-color: #404BBF;
@@ -186,13 +187,12 @@ img{
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
-    transition-property: background-color, border-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-text:is(:hover, :focus){
     background-color: #404BBF;
-    border-color: transparent;
 }
 .section-two {
     padding: 120px 0;
@@ -305,6 +305,13 @@ img{
 
 
 .social-icons{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-link{
     width: 40px;
     height: 40px;
     background: var(--logo-color);
@@ -317,8 +324,7 @@ img{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.social-icons:is(:hover, :focus){
+.svg-link:is(:hover, :focus) {
     background-color: #404BBF;
 }
 
@@ -582,6 +588,14 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:is(:hover, :focus){
+    fill:#FFFFFF;
+    background-color: #404BBF;
 }
 
 .is-hidden{
